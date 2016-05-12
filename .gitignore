@@ -32,3 +32,5 @@ example-apps/
 
 # test files
 .settings/
+
+dist
