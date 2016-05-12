@@ -1,0 +1,47 @@
+{
+  "name": "effector",
+  "version": "1.0.0",
+  "description": "effector is a tool for cocos creator to make shader effect so easy",
+  "license": "MIT",
+  "author": "Colin3dmax",
+  "bugs": {
+    "url": "https://github.com/colin3dmax/EffectDesigner/issues"
+  },
+  "homepage": "https://github.com/colin3dmax/EffectDesigner#readme",
+  "main": "main.js",
+  "scripts": {
+    "api": "firedoc build ./ --theme notab",
+    "build": "node ./tasks/build-css.js",
+    "build:dev": "node ./tasks/build-css.js --dev",
+    "package": "sh ./tasks/build-app.sh",
+    "clear": "sh ./tasks/remove-settings.sh",
+    "start": "node ./tasks/run-dev.js",
+    "start:no-dev": "node ./tasks/run.js",
+    "test": "node ./tasks/run-tests.js",
+    "postinstall": "install-app-deps",
+    "pack": "build",
+    "dist": "build"
+  },
+  "build": {
+    "app-bundle-id": "com.cross2d.effector",
+    "app-category-type": "tools",
+    "osx":{
+      "icon":"build/icon.icns",
+      "background":"build/background.png"
+    }
+  },
+  "dependencies": {
+    "editor-framework": "cocos-creator/editor-framework"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^1.0.0",
+    "electron-package": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colin3dmax/EffectDesigner.git"
+  },
+  "keywords": [
+    "effector"
+  ]
+}
